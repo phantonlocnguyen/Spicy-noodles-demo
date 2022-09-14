@@ -22,9 +22,10 @@
         <!-- =========================HEADER=========================== -->
         <header id="lesson-header" class="father">
             <nav class="header-navbar flex__row-wrap fixed">
-                <img class="navbar-logo" src="" alt="Logo">
-                <div class="header-navbar__left--nav">
-                    <ul class="navbar-list flex__row-wrap">
+                <img class="header-navbar__logo" src="" alt="Logo">
+                <i class="fa-solid fa-bars navbar-btn-menu hidden" id="js-navbar-btn-menu"></i>
+                <div class="header-navbar__list-nav">
+                    <ul class="navbar-list flex__row-wrap" id="js-navbar-list">
                         <li class="navbar-list__item">
                             <a href="#">
                                 <p>Trang chủ</p>
@@ -47,24 +48,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-navbar__middle--search father">
+                <div class="header-navbar__search father">
                     <input class="navbar-input" type="text" placeholder="Tìm món ăn">
                     <button class="navbar-btn-search child" type="button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
-                <div class="header-navbar__right--cart-regis">
-                    <div class="navbar-cart father">
-                        <a class="navbar-cart__icon" href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                        <div class="navbar-cart__box hidden">
-                            <i class="fa-solid fa-caret-up child"></i>
-                            <div class="navbar-cart__list flex__col child">
-                                <p>Chưa có món ăn!</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="header-navbar__cart-regis">
                     <div class="navbar-regis">
                         <ul class="navbar-list flex__row-wrap">
                             <li class="navbar-list__item">
@@ -78,6 +68,17 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="navbar-cart father">
+                        <a class="navbar-cart__icon" href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <div class="navbar-cart__box hidden">
+                            <i class="fa-solid fa-caret-up child"></i>
+                            <div class="navbar-cart__list flex__col child">
+                                <p>Chưa có món ăn!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>

@@ -4,30 +4,30 @@
 #lesson-header {
     width: 100%;
     height: 100vh;
+    text-align: center;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 66%, rgba(0, 0, 0, 0.3)), url('../img/background/header_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: middle;
-    text-align: center;
+    background-attachment: fixed;
 }
 
 /* ------------------------------------------------------- */
 #lesson-header .header-navbar {
-    justify-content: space-between;
-    align-items: center;
+    z-index: 2;
     width: 1700px;
     max-width: 100%;
-    height: 48px;
-    /* overflow: hidden; */
+    height: fit-content;
     top: 36px;
     right: 50%;
     left: 50%;
-    background-color: var(--navbar-background-color);
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    border: 2px solid var(--navbar-border-color);
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(45deg, var(--navbar-background-color-1), var(--navbar-background-color-2));
     animation: navbarFloatIn ease-in-out 1.4s;
-    z-index: 2;
-    border: 2px solid rgba(214, 48, 49, 0.2);
 }
 
 @keyframes navbarFloatIn {
@@ -43,13 +43,13 @@
 /* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
-.header-navbar .navbar-logo {
-    display: inline-block;
-    vertical-align: middle;
+.header-navbar .header-navbar__logo {
     width: 140px;
     height: 48px;
     margin-right: 4px;
     border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* ------------------------------------------------------- */
@@ -80,29 +80,29 @@
     scale: 1.1;
 }
 
-.header-navbar .header-navbar__left--nav .navbar-list .navbar-list__item:last-child a {
+.header-navbar .header-navbar__list-nav .navbar-list .navbar-list__item:last-child a {
     width: 160px;
 }
 
 /* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
-.header-navbar .header-navbar__middle--search {
-    margin-right: 240px;
+.header-navbar .header-navbar__search {
+    margin-right: 140px;
+    margin-left: 80px;
 }
 
-.header-navbar .header-navbar__middle--search .navbar-input {
+.header-navbar .header-navbar__search .navbar-input {
     font-size: 1.4rem;
     color: var(--white-color);
     height: 36px;
     width: 300px;
-    /* outline: 1px solid var(--black-color); */
     border: none;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header-navbar .header-navbar__middle--search .navbar-btn-search {
+.header-navbar .header-navbar__search .navbar-btn-search {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
     color: var(--white-color);
@@ -116,33 +116,44 @@
 
 }
 
-.header-navbar .header-navbar__middle--search .navbar-btn-search:hover {
+.header-navbar .header-navbar__search .navbar-btn-search:hover {
     cursor: pointer;
 }
 
 /* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
-.header-navbar .header-navbar__right--cart-regis .navbar-cart,
-.header-navbar .header-navbar__right--cart-regis .navbar-regis {
+
+/* ------------------------------------------------------- */
+.header-navbar .header-navbar__cart-regis .navbar-regis {
+    margin-right: 28px;
+}
+
+/* ------------------------------------------------------- */
+.header-navbar .header-navbar__cart-regis .navbar-cart,
+.header-navbar .header-navbar__cart-regis .navbar-regis {
     display: inline-block;
 }
 
-.header-navbar .header-navbar__right--cart-regis .navbar-cart a {
+.header-navbar .header-navbar__cart-regis .navbar-cart .navbar-cart__icon {
     color: var(--white-color);
     text-decoration: none;
-    font-size: 1.8rem;
-    margin-right: 18px;
+    font-size: 2rem;
+    line-height: 48px;
+    margin-right: 28px;
+    cursor: default;
 }
 
-.header-navbar .header-navbar__right--cart-regis .navbar-cart a:hover {
+.header-navbar .header-navbar__cart-regis .navbar-cart .navbar-cart__icon i:hover {
     opacity: 0.6;
+    cursor: pointer;
 }
 
-.header-navbar .header-navbar__right--cart-regis .navbar-cart a:hover+.navbar-cart__box,
-.header-navbar .header-navbar__right--cart-regis .navbar-cart .navbar-cart__box:hover {
+.header-navbar .header-navbar__cart-regis .navbar-cart .navbar-cart__icon:hover+.navbar-cart__box,
+.header-navbar .header-navbar__cart-regis .navbar-cart .navbar-cart__box:hover {
     display: block;
     animation: navbarBoxAppear ease-in-out .4s;
+    cursor: pointer;
 }
 
 @keyframes navbarBoxAppear {
@@ -157,25 +168,24 @@
     }
 }
 
-.header-navbar .header-navbar__right--cart-regis .navbar-cart__box i {
+.header-navbar .header-navbar__cart-regis .navbar-cart__box i {
     color: var(--white-color);
     font-size: 1.8rem;
     /* top: 10px; */
-    right: 20px;
-    margin-top: -8px;
-    cursor: pointer;
+    right: 32px;
+    margin-top: -20px;
 }
 
-.header-navbar .header-navbar__right--cart-regis .navbar-cart__box .navbar-cart__list {
+.header-navbar .header-navbar__cart-regis .navbar-cart__box .navbar-cart__list {
     font-size: 1.6rem;
     background-color: var(--white-color);
     border-radius: 8px;
     text-align: center;
-    width: 320px;
+    width: 340px;
     height: 320px;
     /* top: 18px; */
+    margin-top: -10px;
     right: 2px;
-    cursor: pointer;
     justify-content: center
 }
 
@@ -183,13 +193,13 @@
 
 /* ------------------------------------------------------- */
 #lesson-header h1 {
-    padding-top: 80px;
     font-size: 6.5rem;
-    text-transform: uppercase;
     line-height: 8.5rem;
     letter-spacing: 1.4rem;
+    padding-top: 80px;
+    text-transform: uppercase;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(45deg, #6a5af9 10%, #f62682);
+    background: -webkit-linear-gradient(40deg, var(--title-header-color-1) 25%, var(--title-header-color-2));
     -webkit-background-clip: text;
     background-clip: text;
     animation: titleHeaderH1 ease-in-out 2s;
@@ -200,7 +210,7 @@
         opacity: 0;
         letter-spacing: 0;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(45deg, #7163f6 10%, #f33389);
+        background: -webkit-linear-gradient(0deg, var(--title-header-color-1) 20%, var(--title-header-color-2));
         -webkit-background-clip: text;
         background-clip: text;
     }
@@ -209,7 +219,7 @@
         opacity: 1;
         letter-spacing: 1.4rem;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(45deg, #6a5af9 10%, #f62682);
+        background: -webkit-linear-gradient(45deg, var(--title-header-color-1) 20%, var(--title-header-color-2));
         -webkit-background-clip: text;
         background-clip: text;
     }
@@ -230,7 +240,7 @@
 @keyframes headerImgFloatIn {
     from {
         opacity: 0;
-        transform: translate(-50%, 0) rotate(120deg);
+        transform: translate(-50%, 0) rotate(-80deg);
     }
 
     to {

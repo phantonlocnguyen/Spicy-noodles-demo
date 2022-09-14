@@ -5,8 +5,14 @@
     --white-color: #fff;
     --black-color: #000;
     --background-color: #30336b;
-    --navbar-background-color: rgba(214, 48, 49, 0.2);
+    --navbar-background-color-1: rgba(235, 47, 6, 0.2);
+    --navbar-background-color-2: rgba(246, 38, 130, 0.2);
+    --navbar-background-mobile-color-1: rgba(231, 76, 60, 0.8);
+    --navbar-background-mobile-color-2: rgba(243, 156, 18, 0.8);
+    --navbar-border-color: rgba(246, 38, 130, 0.1);
     --navbar-btn-hover-color: rgba(195, 195, 195, 0.3);
+    --title-header-color-1: #eb2f06;
+    --title-header-color-2: #f62682;
 }
 
 * {
@@ -29,6 +35,10 @@ html {
 /* ==================================================================== */
 .hidden {
     display: none;
+}
+
+.open .appear {
+    display: block;
 }
 
 .fixed {
