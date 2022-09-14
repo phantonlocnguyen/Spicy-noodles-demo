@@ -1,0 +1,53 @@
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --background-color: #30336b;
+    --navbar-background-color: rgba(214, 48, 49, 0.2);
+    --navbar-btn-hover-color: rgba(195, 195, 195, 0.3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 10px; */
+    font-size: 62.5%;
+    font-weight: 500;
+    /* line-height: 16px; */
+    line-height: 1.6rem;
+}
+
+/* ==================================================================== */
+/* ==================================================================== */
+/* ==================================================================== */
+.hidden {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.father {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+}
+
+.flex__row-wrap {
+    display: inline-flex;
+}
+
+.flex__row-nowrap {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,70 @@
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+@media (max-width: 739px) {
+    #lesson-header {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 66%, rgba(0, 0, 0, 0.6)), url('../img/background/header_background.jpg');
+    }
+    #lesson-header .header-navbar {
+        border-radius: 0;
+        top: 20px;
+        height: 40px;
+    }
+    @keyframes navbarFloatIn {
+        from {
+            top: -24px;
+        }
+    
+        to {
+            top: 20px;
+        }
+    }
+    .header-navbar .navbar-list .navbar-list__item a {
+        font-size: 1.2rem;
+        height: 40px;
+        width: 100px;
+        line-height: 40px;
+    }
+    .header-navbar .header-navbar__left--nav {
+        display: none;
+    }
+    .header-navbar .header-navbar__middle--search {
+        display: none;
+    }
+    .header-navbar .header-navbar__right--cart-regis .navbar-cart a {
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+    #lesson-header h1 {
+        letter-spacing: 0.4rem;
+    }
+    @keyframes titleHeaderH1 {
+        from {
+            opacity: 0;
+            letter-spacing: 0;
+            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(45deg, #7163f6 10%, #f33389);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    
+        to {
+            opacity: 1;
+            letter-spacing: 0.4rem;
+            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(45deg, #6a5af9 10%, #f62682);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+    #lesson-header .header-img-middle {
+        width: 180px;
+        top: 35%;
+    }
+}
