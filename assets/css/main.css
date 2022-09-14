@@ -15,29 +15,41 @@
 #lesson-header .header-navbar {
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 1700px;
     max-width: 100%;
-    height: 28px;
+    height: 48px;
     /* overflow: hidden; */
-    top: 24px;
+    top: 36px;
     right: 50%;
     left: 50%;
     background-color: var(--navbar-background-color);
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    animation: navbarFloatIn ease-in-out 1.2s;
+    animation: navbarFloatIn ease-in-out 1.4s;
     z-index: 2;
     border: 2px solid rgba(214, 48, 49, 0.2);
 }
 
 @keyframes navbarFloatIn {
     from {
-        top: -24px;
+        top: -36px;
     }
 
     to {
-        top: 24px;
+        top: 36px;
     }
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+.header-navbar .navbar-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+    height: 48px;
+    margin-right: 4px;
+    border-radius: 10px;
 }
 
 /* ------------------------------------------------------- */
@@ -48,13 +60,14 @@
 }
 
 .header-navbar .navbar-list .navbar-list__item a {
+    font-size: 1.6rem;
     display: inline-block;
     color: var(--white-color);
     text-decoration: none;
     text-align: center;
-    width: 76px;
-    height: 28px;
-    line-height: 28px;
+    width: 140px;
+    height: 48px;
+    line-height: 48px;
     border-radius: 10px;
     transition: all ease-in-out .3s;
 }
@@ -68,36 +81,24 @@
 }
 
 .header-navbar .header-navbar__left--nav .navbar-list .navbar-list__item:last-child a {
-    width: 100px;
-}
-
-/* ------------------------------------------------------- */
-
-/* ------------------------------------------------------- */
-.header-navbar .navbar-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 48px;
-    height: 28px;
-    margin-right: 4px;
-    border-radius: 10px;
+    width: 160px;
 }
 
 /* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
 .header-navbar .header-navbar__middle--search {
-    margin-right: 100px;
+    margin-right: 240px;
 }
 
 .header-navbar .header-navbar__middle--search .navbar-input {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: var(--white-color);
-    height: 20px;
-    width: 200px;
+    height: 36px;
+    width: 300px;
     /* outline: 1px solid var(--black-color); */
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -106,10 +107,10 @@
     background-color: rgba(0, 0, 0, 0.2);
     color: var(--white-color);
     border: none;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    height: 20px;
-    width: 24px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 36px;
+    width: 36px;
     top: 0;
     right: 0;
 
@@ -130,7 +131,7 @@
 .header-navbar .header-navbar__right--cart-regis .navbar-cart a {
     color: var(--white-color);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-right: 18px;
 }
 
@@ -158,33 +159,35 @@
 
 .header-navbar .header-navbar__right--cart-regis .navbar-cart__box i {
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 1.8rem;
     /* top: 10px; */
-    right: 18px;
+    right: 20px;
     margin-top: -8px;
     cursor: pointer;
 }
 
 .header-navbar .header-navbar__right--cart-regis .navbar-cart__box .navbar-cart__list {
+    font-size: 1.6rem;
     background-color: var(--white-color);
     border-radius: 8px;
     text-align: center;
-    width: 180px;
-    height: 200px;
+    width: 320px;
+    height: 320px;
     /* top: 18px; */
     right: 2px;
     cursor: pointer;
+    justify-content: center
 }
 
 /* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
 #lesson-header h1 {
-    padding-top: 48px;
-    font-size: 3.4rem;
+    padding-top: 80px;
+    font-size: 6.5rem;
     text-transform: uppercase;
-    line-height: 5rem;
-    letter-spacing: 0.8rem;
+    line-height: 8.5rem;
+    letter-spacing: 1.4rem;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(45deg, #6a5af9 10%, #f62682);
     -webkit-background-clip: text;
@@ -204,7 +207,7 @@
 
     to {
         opacity: 1;
-        letter-spacing: 0.8rem;
+        letter-spacing: 1.4rem;
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient(45deg, #6a5af9 10%, #f62682);
         -webkit-background-clip: text;
@@ -216,7 +219,7 @@
 
 /* ------------------------------------------------------- */
 #lesson-header .header-img-middle {
-    width: 260px;
+    width: 360px;
     top: 50%;
     bottom: 50%;
     transform-origin: center;

@@ -51,3 +51,8 @@ html {
     display: inline-flex;
     flex-wrap: nowrap;
 }
+
+.flex__col {
+    display: inline-flex;
+    flex-direction: column;
+}
