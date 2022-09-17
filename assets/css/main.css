@@ -12,6 +12,7 @@
     background-attachment: fixed;
 }
 
+
 /* ------------------------------------------------------- */
 #lesson-header .header-navbar {
     z-index: 2;
@@ -42,6 +43,7 @@
 
 /* ------------------------------------------------------- */
 
+
 /* ------------------------------------------------------- */
 .header-navbar .header-navbar__logo {
     width: 140px;
@@ -53,6 +55,7 @@
 }
 
 /* ------------------------------------------------------- */
+
 
 /* ------------------------------------------------------- */
 .header-navbar .navbar-list {
@@ -85,6 +88,7 @@
 }
 
 /* ------------------------------------------------------- */
+
 
 /* ------------------------------------------------------- */
 .header-navbar .header-navbar__search {
@@ -122,14 +126,12 @@
 
 /* ------------------------------------------------------- */
 
-/* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
 .header-navbar .header-navbar__cart-regis .navbar-regis {
     margin-right: 28px;
 }
 
-/* ------------------------------------------------------- */
 .header-navbar .header-navbar__cart-regis .navbar-cart,
 .header-navbar .header-navbar__cart-regis .navbar-regis {
     display: inline-block;
@@ -191,6 +193,7 @@
 
 /* ------------------------------------------------------- */
 
+
 /* ------------------------------------------------------- */
 #lesson-header h1 {
     font-size: 6.5rem;
@@ -227,8 +230,10 @@
 
 /* ------------------------------------------------------- */
 
+
 /* ------------------------------------------------------- */
 #lesson-header .header-img-middle {
+    z-index: 1;
     width: 360px;
     top: 50%;
     bottom: 50%;
@@ -247,5 +252,81 @@
         opacity: 1;
         transform: translate(-50%, -50%) rotate(0);
     }
+}
+
+#lesson-header .header-best-saler {
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    top: 50%;
+    bottom: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+
+#lesson-header .header-best-saler .best-saler__food {
+    margin-right: 300px;
+}
+
+#lesson-header .header-best-saler .best-saler__drink {
+    margin-left: 300px;
+}
+
+#lesson-header .header-best-saler .best-saler-title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+}
+
+#lesson-header .header-best-saler .best-saler-title img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+#lesson-header .header-best-saler .best-saler-title h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 56px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(40deg, var(--title-header-color-1) 25%, var(--title-header-color-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#lesson-header .header-best-saler .best-saler-list {
+    
+}
+
+#lesson-header .header-best-saler .best-saler-list .best-saler-list__item {
+    align-items: center;
+    margin: 30px 0;
+    width: 500px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+#lesson-header .header-best-saler .best-saler-list .best-saler-list__item .img-list {
+    width: 100px;
+    height: 100px;
+}
+
+#lesson-header .header-best-saler .best-saler__food .best-saler-list .best-saler-list__item .img-list {
+    right: 0;
+}
+
+#lesson-header .header-best-saler .best-saler__drink .best-saler-list .best-saler-list__item .img-list {
+    left: 0;
+}
+
+#lesson-header .header-best-saler .best-saler-list .best-saler-list__item:hover .img-list {
+    scale: 1.1;
+    transition: all ease-in-out 0.3s;
 }
 /* ------------------------------------------------------- */
