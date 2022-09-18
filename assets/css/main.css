@@ -344,7 +344,7 @@
 #lesson-header .header-best-saler--mobile .best-saler-list .best-saler-list__item {
     display: flex;
     background-image: linear-gradient(30deg, var(--navbar-background-mobile-color-1) 10%, #f62682);
-    height: calc(100%/3 - 32px);
+    height: 70px;
     width: 95%;
     margin-bottom: 28px;
     border-radius: 40px;
