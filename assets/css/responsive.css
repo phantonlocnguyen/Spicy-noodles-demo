@@ -228,4 +228,8 @@
         width: 180px;
         top: 75%;
     }
+
+    #lesson-header .header-best-saler {
+        display: none;
+    }
 }
